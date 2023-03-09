@@ -35,7 +35,18 @@ header{
  }
 
  /*-------------------------------------Form-------------------------------------*/
-label{
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-panel{
+    margin-bottom: 25px;
+}
+
+ label{
     font-size: 18px;
 }
 
@@ -45,6 +56,37 @@ input{
     
     border: solid 0.5px #92acb7;
     margin: 10px 0px;
-    background-color: #f5f5f5;
+    background-color: #fdfdfd;
     box-sizing: content-box;
+    margin-left: 15px;
+    
+}
+
+#password{
+    margin-left: 20px; 
+}
+
+#login{
+    width: 170px;
+    height: 21px;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 10px 0px;
+    border: solid 0.7px #394695;
+    background-color: #394695;
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+    box-sizing: content-box;
+}
+
+#login:hover{
+    border: solid 0.7px #394695;
+    color:#394695;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: bolder;
+    -moz-transition-duration:0.6s;
+    -webkit-transition-duration:0.6s;
+    -o-transition-duration:0.6s;
 }
