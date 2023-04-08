@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding: 0;
+}
+html{
+    /* background: linear-gradient(to top,#c4e8f9, #FFF); */
+    /* background-color: #202b70; */
+    background-image: url(images/taj-bg.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+html, body{
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif ;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+
+/*-------------------------------------Header-------------------------------------*/
+header{
+    margin-bottom: 35px;
+}
+
+#logo{
+    width: 550px;
+    
+}
+
+/*-------------------------------------Intro-------------------------------------*/
+.intro{
+    text-align: center;
+}
+
+.intro h5{
+    padding-left: 60px;
+    text-align: left;
+    color: #7B7E92;
+    font-size: 22px;
+}
+
+.intro h2{
+    color:#394695;
+    font-size: 30px;
+}
+
+
+
+/*-------------------------------------Container-------------------------------------*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    flex-direction: row;  
+}
+
+.login-screen{
+    border: none;
+    /* padding: 100px; */
+    padding: 35px 55px;
+    margin: 80px 0px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.408), 0 6px 20px 0 rgba(0, 0, 0,  0.408);
+    /* width: 600px; */
+    background-color: white;
+    /* margin: 300px; */
+}
+
+
+/*-------------------------------------Radio Buttons-------------------------------------*/
+.radio-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 390px;
+    
+}
+
+.radio-btns input{
+    height: 20px;
+    color: #394695;
+}
+
+.radio-btns label{
+    padding-top: 5px;
+    color: #49494a;
+    font-weight: lighter;
+}
+
+/*-------------------------------------Login Form-------------------------------------*/
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-panel{
+    margin-bottom: 25px;
+}
+
+.login-panel input{
+    height: 25px;
+}
+
+label{
+    font-size: 20px;
+}
+
+input{
+    width: 270px;
+    padding: 10px;
+    border-radius: 1.25rem;
+    border: solid 0.5px #92acb7;
+    margin: 10px 0px;
+    background-color: #fdfdfd;
+    box-sizing: content-box;
+    margin-left: 15px;
+    
+}
+
+#password{
+    margin-left: 20px; 
+}
+
+#login{
+    width: 170px;
+    height: 21px;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 10px 0px;
+    border: solid 0.7px #394695;
+    background-color: #394695;
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+    box-sizing: content-box;
+}
+
+#login:hover{
+    border: solid 0.7px #394695;
+    color:#394695;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: bolder;
+    -moz-transition-duration:0.6s;
+    -webkit-transition-duration:0.6s;
+    -o-transition-duration:0.6s;
+}
