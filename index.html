@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Generate Visitor Ticket</title>
+
+        <link rel="stylesheet" href="GenerateVisitorTicketUI.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="images/favicon/site.webmanifest">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="GenerateVisitorTicketUI.js"></script>
+    </head>
+    <body>
+        <header>
+            <img id="image-mark" src="images/imageMark.png" alt="Tax Administration of Jamaica image mark">
+            <hr>
+            <h2>Generate Visitor Ticket</h2>
+        </header>
+        <main>
+            <div class="container">
+                <div class="search-bar">
+                    <svg aria-hidden="true" viewBox="0 0 24 24"> <!--Search icon svg-->
+                        <path
+                          d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                        />
+                    </svg>
+                    <input type="search" id="search-query" placeholder="Search for ID number...">
+                    <button id="search-visitor" class="button">Search Visitor</button>
+                </div>
+                <div class="new-visitor">
+                    <h3>New Visitor</h3>
+                    <hr>
+                    <div class = "row">
+                        <label>First Name</label>
+                        <input type="text" name="fname" id="fname" placeholder="Enter visitor first name...">
+
+                        <label>Last Name</label>
+                        <input type="text" name="lname" id="lname" placeholder="Enter visitor last name...">
+
+                    </div>
+                    <div class = "row">
+                        <label>ID Number</label>
+                        <input type="text" name="ID_num" id="ID_num" placeholder="Enter visitor ID number...">
+                        <label>Floor Number</label>
+                        <input type="number" name="floorNumber" id="floorNumber" placeholder="Enter floor number...">
+                        <button id="new-visitor" class="button">Generate Visitor Ticket</button>
+                    </div>
+                    <!--EXISTING VISITOR-->
+                    <br>
+                    <br>
+                    <h3>Existing Visitor</h3>
+                    <hr>
+                    <div class = "row">
+                        <label>ID Number</label>
+                        <input type="text" name="ID_num" id="exist_ID" placeholder="Enter visitor ID number...">
+                        <label>Floor Number</label>
+                        <input type="number" name="floorNumber" id="exist_floorNum" placeholder="Enter floor number...">
+                        <button id="existing-visitor" class="button">Generate Visitor Ticket</button>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
