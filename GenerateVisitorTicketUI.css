@@ -15,7 +15,6 @@ body{
     width: 80%;
     height: 100%;
     padding: 1% 10%;
-    border: 1px solid black;
 }
 
 /*-------------------------------------Header-------------------------------------*/
@@ -135,7 +134,7 @@ svg {
 
 
 .ticket {
-    background-image: url('images/imageMark.png');
+    background-image: url('images/ticketbg.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -145,6 +144,29 @@ svg {
     align-self: center;
 }
 
+#ticket1 {
+    background-color: #ffd7d7;
+}
+
+#ticket2 {
+    background-color: #d7ffe3;
+}
+
+#ticket3 {
+    background-color: #cdd4ff;
+}
+
+#ticket4 {
+    background-color: #fff7d7;
+}
+
+#ticket5 {
+    background-color: #d7f7ff;
+}
+
+#ticket6 {
+    background-color: #ffcff6;
+}
 
 label{
     font-size: 15px;

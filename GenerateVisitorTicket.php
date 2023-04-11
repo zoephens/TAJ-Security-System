@@ -38,8 +38,9 @@ if (isset($_POST['btn2'])) {
 	$time = date('h:i:s');
 	$stmt = $conn->query("INSERT INTO visitors (id, firstname, lastname, floornum, created_at) VALUES ($id, '$fname', '$lname', $floorNum, '$dateandtime')");
 	echo "
+			<button id='refresh' onClick='window.location.reload();'>Go to previous page</button>
 			<div class='container'>
-				<div class='ticket'>
+				<div class='ticket' id='ticket$floorNum'>
 					<h2>Floor Number: $floorNum</h2>
 					<hr>
 					<h3><b>Visitor ID:</b> $id</h3>
@@ -63,8 +64,9 @@ if (isset($_POST['btn3'])) {
 	
 	$stmt = $conn->query("INSERT INTO visitors (id, firstname, lastname, floornum, created_at) VALUES ($id, '$fname', '$lname', $floorNum, '$dateandtime')");
 	echo "
+			<button id='refresh' onClick='window.location.reload();'>Go to previous page</button>
 			<div class='container'>
-				<div class='ticket'>
+				<div class='ticket' id='ticket$floorNum'>
 					<h2>Floor Number: $floorNum</h2>
 					<hr>
 					<h3><b>Visitor ID:</b> $id</h3>
