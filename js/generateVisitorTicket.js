@@ -3,7 +3,9 @@ $(document).ready(function() {
 		console.log(":D")
 		if ($("#search-query").val()) {
 			var search_id = $("#search-query").val();
-			$.post("http://localhost/TAJSystem1.0/includes/generateVisitorTicket.php", {btn1 : `Hello`, search_id : `${search_id}`})
+			//if this file path fails -->use absolute file path (http://localhost/TAJSystem1.0/includes/generateVisitorTicket.php)
+			//where TAJSystem1.0 is the containing folder name
+			$.post("../includes/generateVisitorTicket.php", {btn1 : `Hello`, search_id : `${search_id}`})
 				.done(function(data) {
 					alert(data);
 			});
@@ -20,7 +22,7 @@ $(document).ready(function() {
 			$("#lname").val('');
 			$("#ID_num").val('');
 			$("#floorNumber").val('');
-			$.post("http://localhost/TAJSystem1.0/includes/generateVisitorTicket.php", {btn2 : `Hello`, fname : `${fname}`, lname : `${lname}`, id : `${id}`, floorNum : `${floorNum}`,})
+			$.post("../includes/generateVisitorTicket.php", {btn2 : `Hello`, fname : `${fname}`, lname : `${lname}`, id : `${id}`, floorNum : `${floorNum}`,})
 				.done(function(data) {
 					$("body").html(data);
 			});
@@ -33,7 +35,7 @@ $(document).ready(function() {
 		if (fname && lname && id && floorNum) {
 			$("#exist_ID").val('');
 			$("#exist_floorNum").val('');
-			$.post("http://localhost/TAJSystem1.0/includes/generateVisitorTicket.php", {btn3 : `Hello`, id : `${id}`, floorNum : `${floorNum}`,})
+			$.post("../includes/generateVisitorTicket.php", {btn3 : `Hello`, id : `${id}`, floorNum : `${floorNum}`,})
 				.done(function(data) {
 					$("body").html(data);
 			});
