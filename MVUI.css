@@ -69,15 +69,48 @@ hr{
     border-style: none;
     background-color: #394695;
     color:white;
+    height: 47px;
+    margin-right: 15px;
 }
 
-#searchbar{
-    border-radius: 40px;
-    padding-left: 20px;
-    padding-right: 30px;
-    border-color: black;
-    border-style: solid;
+.search-bar {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
+
+.search-bar input[type="search"] {
+    padding-left: 3rem;
+    width: 100%;
+    box-sizing: border-box;
+    border:none;
+    border-bottom: 0.5px solid #394695;
+    border-top: 0.5px solid #394695;
+    border-left:0.5px solid #394695; 
+    border-right: 0.5px solid #394695;
+    font-size: 1rem;
+    line-height: 1.5;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+    background-color:#F5F6F8 ;
+}
+
+.search-bar input[placeholder="Search by Employee ID..."] {
+    padding-left: 5%;
+}
+
+.search-bar svg {
+    position: absolute;
+    left: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: rgb(85, 82, 82);
+} 
 .searchContainer{
     display: flex;
     flex-direction: row;
@@ -112,7 +145,7 @@ td{
 }
 
 .tableContainer{
-    padding-top: 30px;
+    padding-top: 5px;
     justify-content: center;
     align-items: center;
     display: flex;
