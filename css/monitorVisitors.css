@@ -1,0 +1,190 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+html, body{
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif ;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.thebody{
+    padding-left: 3%;
+    padding-top: 2%;
+    padding-right: 3%;
+}
+
+/*-------------------------------------Header-------------------------------------*/
+header {
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    border: 1px transparent;
+    padding: 10px 35px;
+    box-shadow: 0 8px 6px -2px rgb(151, 151, 151);
+    z-index: 9999;
+}
+
+
+#image-mark{
+    width: 80px;
+}
+
+hr{
+    border: 1px solid #394695;
+    height: 70px;
+    margin: 0px 20px;
+}
+
+
+.svg{
+    float: right;
+    color: #7B7E92;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    align-items: center;
+}
+
+/*-----------------------Search Bar---------------------------------*/
+
+.search-bar {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: left; 
+}
+
+#searchBtn{
+    width: 100px;
+    height: 45px;
+    border-radius: 30px;
+    padding: 10px;
+    /* border: none; */
+    background-color: #3f3d56;
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+    transition-duration:0.6s;
+    -moz-transition-duration:0.6s;
+    -webkit-transition-duration:0.6s;
+    -o-transition-duration:0.6s;
+    margin-left:5px;
+    
+}
+
+#searchBtn:hover{
+    /* border: solid 1px #3f3d56; */
+    color: #3f3d56;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bolder; 
+}
+
+.search-bar {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-bar input[type="search"] {
+    padding-left: 3rem;
+    width: 100%;
+    box-sizing: border-box;
+    border:none;
+    border-bottom: 0.5px solid #394695;
+    border-top: 0.5px solid #394695;
+    border-left:0.5px solid #394695; 
+    border-right: 0.5px solid #394695;
+    font-size: 1rem;
+    line-height: 1.5;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+    background-color:#F5F6F8 ;
+}
+
+.search-bar input[placeholder="Search by Employee ID..."] {
+    padding-left: 5%;
+}
+
+.search-bar svg {
+    position: absolute;
+    left: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: rgb(85, 82, 82);
+} 
+.searchContainer{
+    display: flex;
+    flex-direction: row;
+    padding-top: 25px;
+    justify-content: right;
+    margin-right: 40px;
+}
+#query{
+    width: 70%;
+    padding: 10px;
+    border-radius: 50px;
+    border: solid 0.5px black;
+    margin: 10px 40px 10px 0px;
+    box-sizing: content-box;
+    background-color: #ebf0f1
+}
+
+svg {
+    fill: #394695;
+    padding: 10px;
+    width: 30px;
+    
+}
+th{
+    padding: 12px; 
+    background-color: #D6E0EA; 
+    text-align: left;
+}
+td{
+    padding: 12px;
+    text-align: left;
+}
+
+.tableContainer{
+    padding-top: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+#view-ticket{
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #4eb3e6;
+    color: white;
+    border-radius: 10px;
+    border: solid 0.25px #4eb3e6;
+    cursor: pointer;
+    transition-duration:0.6s;
+    -moz-transition-duration:0.6s;
+    -webkit-transition-duration:0.6s;
+    -o-transition-duration:0.6s;
+}
+
+#view-ticket:hover{
+    color: #4eb3e6;
+    background-color: white;
+    cursor: pointer;
+    border: solid 0.25px #4eb3e6;
+
+}

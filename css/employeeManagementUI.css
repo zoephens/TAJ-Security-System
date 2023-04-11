@@ -1,0 +1,384 @@
+*{
+    margin:0px;
+    padding: 0;
+}
+
+html, body{
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif ;
+    width: 100%;
+    height: 100%;
+    /* overflow-x: hidden; */
+    /* background: linear-gradient(to top,#c4e8f9, #FFF); */
+}
+
+/* body{
+    margin: 10px 35px;
+} */
+
+.thebody{
+    padding-left: 3%;
+    padding-top: 2%;
+    padding-right: 3%;
+}
+
+/*-------------------------------------Header-------------------------------------*/
+header {
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    border: 1px transparent;
+    padding: 10px 35px;
+    box-shadow: 0 8px 6px -2px rgb(151, 151, 151);
+    z-index: 9999;
+}
+
+
+#image-mark{
+    width: 80px;
+}
+
+header hr{
+    border: 1px solid #394695;
+    height: 70px;
+    margin: 0px 20px;
+}
+
+/* #image-mark,hr,h2{
+    margin-right: 10px;
+} */
+
+
+.svg{
+    float: right;
+    color: #7B7E92;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    align-items: center;
+}
+
+/*-----------------------Search Bar---------------------------------*/
+
+.searchContainer{
+    padding-right: 10%;
+    padding-left: 1%;
+    padding-top: 6px;
+}
+
+.search-bar {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-bar input[type="search"] {
+    padding-left: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+    border:none;
+    border-bottom: 0.5px solid #394695;
+    border-top: 0.5px solid #394695;
+    border-left:0.5px solid #394695; 
+    border-right: 0.5px solid #394695;
+    font-size: 1rem;
+    line-height: 1.5;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+    background-color:#F5F6F8 ;
+}
+
+.search-bar input[placeholder="Search by Employee ID..."] {
+    padding-left: 5%;
+}
+
+.search-bar svg {
+    position: absolute;
+    left: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: rgb(85, 82, 82);
+} 
+
+#query{
+    width: 70%;
+    padding: 10px;
+    border-radius: 50px;
+    border: solid 0.5px black;
+    margin: 10px 40px 10px 0px;
+    box-sizing: content-box;
+    background-color: #ebf0f1
+}
+
+svg {
+    fill: #394695;
+    padding: 10px;
+    width: 30px;
+}
+
+#searchBtn{
+    width: 200px;
+    padding: 10px;
+    border-radius: 30px;
+    /* border: none; */
+    background-color: #3f3d56;
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+
+    transition-duration:0.6s;
+    -moz-transition-duration:0.6s;
+    -webkit-transition-duration:0.6s;
+    -o-transition-duration:0.6s;
+
+    margin: 35px 10px;
+    
+}
+
+#searchBtn:hover{
+    /* border: solid 1px #3f3d56; */
+    color: #3f3d56;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bolder; 
+}
+
+/*-----------------------The actual Body---------------------------------*/
+
+
+/*------The table info------*/
+.EmployeeInfo{
+    padding-left: 5px;
+}
+
+p{
+
+    padding-top: -5px;
+}
+.searchContainer #line{
+    border: 1px solid #394695;
+}
+
+.searchContainer p{
+    font-size: 40px;
+    color: #394695;
+    padding-bottom: 10px;
+}
+label {
+    display:block;
+    margin-bottom: 10px;
+    color: #394695;
+}
+
+input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 1.25rem;
+    padding: 5px 10px;
+    font-size: 16px;
+    width: 400px;
+    box-sizing: border-box;    
+    border-bottom: 0.5px solid #394695;
+    border-top: 0.5px solid #394695;
+    border-left:0.5px solid #394695; 
+    border-right: 0.5px solid #394695;
+    background-color:#F5F6F8 ;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: blue;
+}
+
+input[type="number"] {
+    border: 1px solid #ccc;
+    border-radius: 1.25rem;
+    padding: 5px 10px;
+    font-size: 16px;
+    width: 400px;
+    box-sizing: border-box;    
+    border-bottom: 0.5px solid #394695;
+    border-top: 0.5px solid #394695;
+    border-left:0.5px solid #394695; 
+    border-right: 0.5px solid #394695;
+    background-color:#F5F6F8 ;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: blue;
+}
+
+.select {
+    position: relative;
+    display: block;
+    width: 400px;
+    border-radius: 1.25rem;
+    /* border: solid 0.5px #2f306196; */
+    box-sizing: content-box;
+    font-weight: 400;
+    border-bottom: 0.5px solid #394695;
+    border-top: 0.5px solid #394695;
+    border-left:0.5px solid #394695; 
+    border-right: 0.5px solid #394695;
+    background-color:#F5F6F8 ;
+    height: 35px;
+}
+
+.select select {
+    width: 400px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 1.25rem;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 35px;
+}
+
+.select::after {
+    content: "\25BC";
+    font-size: 12px;
+    color: #555;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+label[for="Position"] {
+    display: block;
+    margin-right: 10px;
+}
+
+/* .select{
+    width: 480px;
+    padding: 12px 20px;
+    margin: 8px;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    border: 1px outset whitesmoke;
+    box-shadow: none;
+    outline: none;
+} */
+
+
+
+/*------The buttons-----*/
+.delete-button {
+    background-color: #EF5451;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 30px;
+    border: solid 0.25px #EF5451;
+    color: white;
+    cursor: pointer;
+    transition-duration:0.6s;
+    -moz-transition-duration:0.6s;
+    -webkit-transition-duration:0.6s;
+    -o-transition-duration:0.6s;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.delete-button:hover{
+    color: #EF5451;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bolder; 
+    border: solid 0.25px #EF5451;
+}
+
+.add-button {
+    background-color: #499539;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 30px;
+    border: solid 0.25px #499539;
+    color: white;
+    cursor: pointer;
+    transition-duration:0.6s;
+    -moz-transition-duration:0.6s;
+    -webkit-transition-duration:0.6s;
+    -o-transition-duration:0.6s;
+    margin: 5px;
+}
+
+.add-button:hover{
+    color: #499539;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bolder; 
+    border: solid 0.25px #499539;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    padding: 130px 500px 400px 100px;
+
+}
+
+.edit-button {
+    background-color: #394695;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    width: 200px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 30px;
+    border: solid 0.25px #394695;
+    color: white;
+    cursor: pointer;
+    transition-duration:0.6s;
+    -moz-transition-duration:0.6s;
+    -webkit-transition-duration:0.6s;
+    -o-transition-duration:0.6s;
+    margin: 5px;
+}
+
+.edit-button:hover{
+    color: #394695;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bolder; 
+    border: solid 0.25px #394695;
+}
+
+
+.emp-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.EmployeeInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
