@@ -21,7 +21,7 @@ $(document).ready(function() {
 			$("#floorNumber").val('');
 			$.post("GenerateVisitorTicket.php", {btn2 : `Hello`, fname : `${fname}`, lname : `${lname}`, id : `${id}`, floorNum : `${floorNum}`,})
 				.done(function(data) {
-					alert("Added Visitor Successfully");
+					$("body").html(data);
 			});
 		}
 	});
@@ -34,7 +34,7 @@ $(document).ready(function() {
 			$("#exist_floorNum").val('');
 			$.post("GenerateVisitorTicket.php", {btn3 : `Hello`, id : `${id}`, floorNum : `${floorNum}`,})
 				.done(function(data) {
-					alert("Added Visitor Successfully");
+					$("body").html(data);
 			});
 		}
 	});
