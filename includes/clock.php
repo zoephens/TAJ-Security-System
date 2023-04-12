@@ -59,4 +59,3 @@
         header("location: ../employeeDashboard.php?error=none");
         exit();
     }
-    // HI ZOE!! ITS NOT WORKING YET BECAUSE IDK "DONT KNOW WHY!"
